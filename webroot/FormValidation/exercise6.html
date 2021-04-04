@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="exercise6.css">
+    <link rel="alternate stylesheet" type="text/css" href="reset.css">
+</head>
+<script>
+function validateForm() {
+    //collect form data in JavaScript variables
+    var pw1 = document.getElementById("password").value;
+    var pw2 = document.getElementById("confirmed_password").value;
+    var name1 = document.getElementById("firstName").value;
+	var name2 = document.getElementById("lastName").value;
+    
+    //check empty first name field
+    if(name1 == "") {
+      alert("Fill the first name")
+      return false;
+    }
+    
+    //character data validation
+    if(!isNaN(name1)){
+      alert("Only characters are allowed")
+      return false;
+    }
+
+   //character data validation
+    if(!isNaN(name2)){
+      alert("Only characters are allowed")
+      document.getElementById("charMsg").innerHTML = "**";
+      return false;
+    } 
+  
+    //check empty password field
+    if(pw1 == "") {
+      alert("Fill the password please!")
+      return false;
+    }
+  
+    //check empty confirm password field
+    if(pw2 == "") {
+      alert("Enter the password please!")
+      return false;
+    } 
+   
+    //minimum password length validation
+    if(pw1.length < 8) {
+      alert("Password length must be atleast 8 characters")
+      document.getElementById("message1").innerHTML = "**";
+      return false;
+    }
+
+    //maximum length of password validation
+    if(pw1.length > 15) {
+      alert("Password length must not exceed 15 characters")
+      document.getElementById("message1").innerHTML = "**";
+      return false;
+    }
+  
+    if(pw1 != pw2) {
+      alert("Passwords are not same");
+      return false;
+    } else {
+      alert ("Your password created successfully");
+      return true;
+    }
+ }
+</script>
+
+<body id="login">
+  <section class="form_login">
+      <h2>Sign Up</h2>
+      <form class="loginbox" role="form" action="exercise6.php" method="POST" onsubmit="return validateForm()">
+        <input name="firstName" placeholder="First Name" id="firstName" required></input>
+        <input name="lastName" placeholder="Last Name" id="lastName" required></input>
+        <input name="email" placeholder="email" type="email" id="email" required></input>
+        <input type="password"  id="password" placeholder="Password" name="password"></input>
+        <input type="password"  id="confirmed_password" placeholder="Confirmed Password" name="confirmed_password">
+        <input id="login" type="submit" value="Sign Up">
+      </form>
+    </section>
+</body>

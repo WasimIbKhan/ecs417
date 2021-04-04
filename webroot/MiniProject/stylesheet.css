@@ -1,0 +1,229 @@
+/* Navigation Bar*/
+.topnav {
+  overflow: hidden;
+  background-color: lightgreen;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  vertical-align:middle;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black
+}
+
+.topnav a.name {
+  color: black;
+  font-size: x-large;
+  font-family: sans-serif;
+}
+
+/* Page Structure*/
+div#container {
+  position: relative;
+}
+
+div#main{
+  margin-left: 15em;
+  margin-right: 15em;
+  top: 0;
+  padding: 5;
+}
+
+div#left-side-bar{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15em;
+}
+
+div#right-side-bar{
+  position: absolute;
+  right: 0em;
+  top: 0;
+  width: 15em;
+}
+/* General Layout structure of side bars */
+.listContainer{
+  background-color: gainsboro;
+  min-width: 100%; 
+  display: inline-block; 
+}
+.floatRight{
+  float: right;
+  width: 50%;
+}
+.floatLeft{
+  float: left;
+  width: 50%;
+  align-items: flex-start;
+}
+p#skillsTitle{
+  background-color: lightgreen;
+  text-align: center;
+}
+.greenTitle{
+  background-color: lightgreen;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+/* Left Side Page Style*/
+div#ResearchInterest{
+  margin-top: 1em;
+  margin-right: 2em;
+  background-color: cornsilk;
+  padding: 1em;
+}
+div#links{
+  margin-top: 1em;
+  margin-right: 2em;
+  background-color: gainsboro;
+  padding: 1em;
+}
+div#skills{
+  background-color: gainsboro;
+  margin-top: 1em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 11em;
+  height: fit-content;
+}
+/* Right Side Page Style*/
+div#hobbies{
+  margin-top: 1em;
+  margin-right: 0em;
+  background-color: gainsboro;
+}
+div#Top5Movies{
+  margin-top: 1em;
+  margin-right: 0em;
+  background-color: gainsboro;
+}
+/*Main Page Style */
+.wasimPicture{
+  float: left;
+}
+aside{
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+.item {
+  width: 100%;
+  background-color: lightgray;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  flex: 50%; 
+  margin-bottom: 10px;
+}
+/* Login Page Style*/
+input#login#password{
+  width: 50%;
+}
+
+body#login{
+  background-color: goldenrod;
+  text-align: center;
+}
+body#blog{
+  background-color: burlywood;
+  text-align: center;
+}
+input#email,#password, #title {
+  outline: none;
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-family: "Roboto";
+  box-sizing: border-box;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.2s linear;
+}
+/* Form Page Style*/
+textarea{
+  outline: none;
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  height: 150px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-family: "Roboto";
+  box-sizing: border-box;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.2s linear;
+}
+.form_login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  width: 350px;
+  margin: -140px 0 0 -182px;
+  padding: 40px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+.form_blog {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    background: #fff;
+    width: 385px;
+    margin: -140px 0 0 -182px;
+    padding: 40px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+  input#login {
+    cursor: pointer;
+    background: #44c4e7;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+  }
+  input#blog {
+    cursor: pointer;
+    background: #44c4e7;
+    width: 45%;
+    padding: 10px 15px;
+    border: 0;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .left {
+    float: left;
+    margin-right:10px;
+    }
+    .right{
+    float: left;
+    margin-left: 25px;
+    }

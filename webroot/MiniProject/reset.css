@@ -1,0 +1,21 @@
+html,body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p { 
+  margin:0;
+  padding:0;
+}
+ol,ul {
+  list-style:none;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size:100%;
+  font-weight:normal;
+}
+section,article,figcaption,aside,nav,footer  {
+  display: block;
+}
+figure {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+}

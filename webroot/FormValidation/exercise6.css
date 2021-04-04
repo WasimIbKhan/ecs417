@@ -1,0 +1,59 @@
+/* Login Page Style*/
+input#login#password{
+  width: 50%;
+}
+
+body#login{
+  background-color: goldenrod;
+  text-align: center;
+}
+input#email,#password, #title, #email, #firstName, #lastName, #confirmed_password {
+  outline: none;
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-family: "Roboto";
+  box-sizing: border-box;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.2s linear;
+}
+/* Form Page Style*/
+textarea{
+  outline: none;
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  height: 150px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-family: "Roboto";
+  box-sizing: border-box;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.2s linear;
+}
+.form_login {
+  position: absolute;
+  top: 37.5%;
+  left: 50%;
+  background: #fff;
+  width: 350px;
+  margin: -140px 0 0 -182px;
+  padding: 40px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }
+  .left {
+    float: left;
+    margin-right:10px;
+    }
+    .right{
+    float: left;
+    margin-left: 25px;
+    }

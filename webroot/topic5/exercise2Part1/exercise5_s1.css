@@ -1,0 +1,35 @@
+.row {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: LightGreen;
+  width: 100%
+}
+.column {
+  float: left;
+  padding: 5px;
+}
+.footer {
+  margin-top: 25px;
+  background-color: green;
+  font-size: 36px;
+}
+.body {
+  margin: 25px 50px 75px;
+}
+.titleBar {
+  background-color: green;
+}
+
+.bodyBar {
+ margin: 10px;
+ background-color: white;
+}
+Body {
+  background-color: grey;
+}
+a {
+ color: gold;
+ font-weight: bold;
+
+}

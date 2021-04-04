@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Week 4 - Exercise 4</title>
+        <link rel="stylesheet" type="text/css" href="Exercise4.css">
+        <link rel="alternate stylesheet" type="text/css" href="reset.css">
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Shirt Order Form</legend>
+                <fieldset>
+                    <div>
+                        <label for="s-size">Shirt-Size: </label>
+                        <select name="Shirt size" id="s-size">
+                            <option>XS</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                          </select>
+                    </div>
+                    <div>
+                        <label for="sleeves">Sleeves </label>
+                        <div>
+                            <input type="radio" name="sleeves" value="1" checked>short <br>
+                            <input type="radio" name="sleeves" value="2">long<br>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="color">Color</label>
+                        <input type="color" name="colorChoice">
+                    </div>
+            
+                    <div>
+                        <label for="quantity">Quantity </label>
+                        <input type="number" min="1" max="10" name="quantity">
+                    </div>
+            
+                    <div>
+                        <label for="date">Date </label>
+                        <input type="date">
+                    </div>
+                </fieldset>
+               <fieldset>
+                <div>
+                    <label for="name">Name </label>
+                    <input type="text" name= "name">
+                </div>
+                <div>
+                    <label for="email">Email </label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label for="telephone">Telephone </label>
+                    <input type="tel" name="telephone">
+                </div>
+               </fieldset>
+               <fieldset>
+                <div>
+                    <label for="address">Address </label>
+                    <input type="text" name="address">
+                </div>
+                <div>
+                    <label for="City">City </label>
+                    <select name="City" id="City">
+                        <option>London</option>
+                        <option>New York</option>
+                        <option>Tokyo</option>
+                        <option>Hong Kong</option>
+                      </select>
+                </div>
+                <div>
+                    <label for="postcode">Postcode </label>
+                    <input type="text" name="postcode">
+                </div>
+               </fieldset>
+               <div>
+                <label for="check">Please Keep me imformed of future shirt offerings</label>
+                <input type="checkbox" name="check">
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="submit" value="Close Form">
+            </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+form{
+    align-content: center;
+    background-color: lightgreen;
+}
+.buttons{
+    align-content: center;
+}
+legend{
+    width: max-content;
+    padding: 1px;
+   
+    background-color: darkgreen;
+    align-content: center;
+    text-align: center;
+}
