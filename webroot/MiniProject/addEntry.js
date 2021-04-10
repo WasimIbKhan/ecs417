@@ -1,6 +1,6 @@
 function eraseText() {
   var clearOptions = confirm("Are you sure you want to clear the content?");
-  if(clearOptions == TRUE) {
+  if(clearOptions == true) {
     document.getElementById("title").value = "";
     document.getElementById("bodyText").value = "";
   } else{
