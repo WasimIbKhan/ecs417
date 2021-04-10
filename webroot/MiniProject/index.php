@@ -20,7 +20,7 @@ if(!isset($_SESSION["login"]))
       <a href="#skills">Skills</a>
       <a href="#Portfolio">Portfolio</a>
       <a href="#Contact">Contact</a>
-      <a href="addEntry.php">Blog</a>
+      <a href="viewBlog.php">Blog</a>
       <a href="logout.php">Logout</a>
     </nav>
     <div id="container">

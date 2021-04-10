@@ -1,5 +1,4 @@
-<html></html>
-
+/*
 <?php 
 session_start ();
 if(!isset($_SESSION["login"]))
@@ -7,7 +6,8 @@ if(!isset($_SESSION["login"]))
 
 
 ?>
-<!DOCTYPE html>
+*/
+
 <html>
     <head>
         <meta charset="utf-8" />
@@ -23,11 +23,8 @@ if(!isset($_SESSION["login"]))
             <form class="blogbox" autocomplete="off" id="blogForm" method="POST" action="addPost.php" onsubmit="onSubmit();">
                 <input name="title" placeholder="title" type="text" id="title" required></input>
                 <textarea name="bodyText" maxlength="500" form="blogForm" id="bodyText" required></textarea>
-                <input name="dateTime" id="dateAndTime" type="datetime-local" class="left">
-                <div>
-                    <input id="blog" class="left" type="submit" value="Post" />
-                    <input id="blog" class="right" value="Clear" onclick="eraseText();"/>
-                </div>
+                <input id="blog" class="left" name="submit" type="submit" value="Post" />
+                <input id="blog" class="right" value="Clear" type="button" onclick="eraseText();" />
             </form> 
           </section>
     </body>
