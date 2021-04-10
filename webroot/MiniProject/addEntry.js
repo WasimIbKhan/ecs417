@@ -1,8 +1,8 @@
 function eraseText() {
   var clearOptions = confirm("Are you sure you want to clear the content?");
   if(clearOptions) {
-    //document.getElementById("title").value = "";
-    //document.getElementById("bodyText").value = "";
+    document.getElementById("title").value = "";
+    document.getElementById("bodyText").value = "";
   } else{
     alert("Cancelled!");
   }
