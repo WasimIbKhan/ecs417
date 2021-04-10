@@ -13,7 +13,11 @@ function onSubmit() {
 }
 
 function validate() {
-  if(document.getElementById("title").value =="") {
-    document.getElementById("title").style.backgroundColor= 'pink';
+  var clearOptions = confirm("Are you sure you want to clear the content?");
+  if(clearOptions == TRUE) {
+    document.getElementById("title").value = "";
+    document.getElementById("bodyText").value = "";
+  } else{
+    alert("Cancelled!");
   }
 }
