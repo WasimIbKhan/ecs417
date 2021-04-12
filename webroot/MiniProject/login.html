@@ -11,7 +11,7 @@
     <body id="login">
         <section class="form_login">
             <h2>Login</h2>
-            <form class="loginbox" autocomplete="off" action="login.php" method="POST" onsubmit="validateForm()">
+            <form class="loginbox" autocomplete="off" action="login.php" method="POST" onsubmit="return validateForm()">
               <input name="email" placeholder="email" type="email" id="email" required></input>
               <input name="password" placeholder="Password" type="password" id="password" required minlength="5"></input>
               <input id="login" type="submit" value="Login">
