@@ -6,7 +6,7 @@ function validateForm() {
     return false;
   } 
   if(passwordInput === "") {
-    emailInput.style.backgroundColor = "pink";
+    passwordInput.style.backgroundColor = "pink";
     return false;
   }
   
