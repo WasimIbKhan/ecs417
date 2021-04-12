@@ -12,7 +12,12 @@
 		var emailInput = document.getElementById("email").value;
   		var passwordInput = document.getElementById("password").value;
 		document.getElementById("login").addEventListener("click", function(event){
-			if(emailInput === "" || passwordInput === "") {
+			if(emailInput === "") {
+				emailInput.style.backgroundColor = "pink";
+			   event.preventDefault()
+			   }
+			if(passwordInput === "") {
+				passwordInput.style.backgroundColor = "pink";
 			   event.preventDefault()
 			   }
 		});
