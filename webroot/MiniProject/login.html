@@ -8,6 +8,15 @@
 		 <script type="text/javascript" src="login.js"></script>
 		<lin
     </head>
+	<script>
+		var emailInput = document.getElementById("email").value;
+  		var passwordInput = document.getElementById("password").value;
+		document.getElementById("login").addEventListener("click", function(event){
+			if(emailInput === "" || passwordInput === "") {
+			   event.preventDefault()
+			   }
+		});
+	</script>
     <body id="login">
         <section class="form_login">
             <h2>Login</h2>
