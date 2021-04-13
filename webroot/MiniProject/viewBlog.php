@@ -71,7 +71,7 @@ if(!isset($_SESSION["login"]))
     </script>
     <?php foreach($posts as $i => $post) : ?>
         <?php if(!isset($_POST["month"])) : ?>
-            <aside><?php echo date_format($post[2],"jS F Y, g:i e"); ?></aside>
+            <aside><?php echo $post[2] ?></aside>
             <?php if($_SESSION["username"] == 'Admin') : ?>
                 <form  method="POST" action="deleteEntry.php">
                     <input name="ID" type="hidden" formmethod="post" formaction="deleteEntry.php" value="<?php echo $keys[$i] ?>"/>
