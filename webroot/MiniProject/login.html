@@ -9,18 +9,20 @@
 		<lin
     </head>
 	<script>
-		var emailInput = document.getElementById("email").value;
-  		var passwordInput = document.getElementById("password").value;
-		document.getElementById("login").addEventListener("click", function(event){
-			if(emailInput === "") {
-				emailInput.style.backgroundColor = "pink";
-			   event.preventDefault()
-			   }
-			if(passwordInput === "") {
-				passwordInput.style.backgroundColor = "pink";
-			   event.preventDefault()
-			   }
+		function submitBtn(){
+			var emailInput = document.getElementById("email").value;
+			var passwordInput = document.getElementById("password").value;
+			document.getElementById("login").addEventListener("click", function(event){
+				if(emailInput === "") {
+					emailInput.style.backgroundColor = "pink";
+				   event.preventDefault()
+				   }
+				if(passwordInput === "") {
+					passwordInput.style.backgroundColor = "pink";
+				   event.preventDefault()
+				}
 		});
+		}
 	</script>
     <body id="login">
         <section class="form_login">
@@ -28,7 +30,7 @@
             <form class="loginbox" autocomplete="off" action="login.php" method="POST" onsubmit="return validateForm()">
               <input name="email" placeholder="email" type="email" id="email" required></input>
               <input name="password" placeholder="Password" type="password" id="password" required minlength="5"></input>
-              <input id="login" type="submit" value="Login">
+              <input id="login" type="submit" value="Login" onclick="submitBtn()">
             </form>
           </section>
     </body>
