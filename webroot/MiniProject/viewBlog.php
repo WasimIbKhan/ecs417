@@ -82,7 +82,7 @@ if(!isset($_SESSION["login"]))
             <p><?php echo$post[1] ?></p>
             <hr>
         <?php elseif($_POST["month"] == date("F", strtotime($post[2]))) : ?>
-            <aside><?php echo date("jS F Y, g:i",strtotime($post[2])); ?></aside>
+            <aside><?php date("jS F Y, g:i \U\T\C",strtotime($post[2])); ?></aside>
             <?php if($_SESSION["username"] == 'Admin') : ?>
                 <form  method="POST" action="deleteEntry.php">
                     <input name="ID" type="hidden" formmethod="post" formaction="deleteEntry.php" value="<?php echo $keys[$i] ?>"/>
